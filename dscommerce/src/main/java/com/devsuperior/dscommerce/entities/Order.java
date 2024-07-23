@@ -20,6 +20,20 @@ public class Order {
     @JoinColumn(name = "client_id")
     private User client;
 
+    public Order() {
+    }
+
+    public Order(Long id, Instant moment, OrderStatus orderStatus, User client, Payment payment) {
+        this.id = id;
+        this.moment = moment;
+        this.orderStatus = orderStatus;
+        this.client = client;
+        this.payment = payment;
+    }
+
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Payment payment;
+
     public void setId(Long id) {
         this.id = id;
     }
