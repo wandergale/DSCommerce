@@ -9,18 +9,11 @@ Repositório: https://github.com/wandergale/DSCommerce
 
 DSCommerce é uma aplicação exemplo construída durante o curso "Java Spring Professional" da DevSuperior. O objetivo do projeto é demonstrar a construção de uma aplicação de e-commerce simples (backend em Spring Boot e frontend separado) com boas práticas, organização por camadas, integração com banco de dados, APIs REST e autenticação/autorização conforme aplicável.
 
-> Observação: este README é um template completo e contém orientações e comandos comuns. Ajuste as seções de acordo com a estrutura real do repositório (por exemplo, nomes de pastas `backend` / `frontend`, variáveis de ambiente, e endpoints específicos).
-
----
-
 ## Tecnologias
 
-- Backend: Java 11+ / 17+, Spring Boot, Spring Data JPA, Spring Security (se aplicável)
-- Banco de dados: PostgreSQL / MySQL / H2 (conforme configuração)
-- Build: Maven (pom.xml)
-- Frontend (se presente): React / Vue / Angular, Node.js, npm / yarn
-- Documentação de API: Swagger (opcional)
-- Docker (opcional) para banco e execução em container
+- Backend: Java, Spring Boot
+- Banco de dados: PostgreSQL
+- Frontend (se presente): React, npm
 
 ---
 
@@ -32,9 +25,6 @@ DSCommerce é uma aplicação exemplo construída durante o curso "Java Spring P
 - Autenticação e autorização (JWT ou session-based) — se implementado
 - Integração com banco relacional via JPA/Hibernate
 - Endpoints REST bem definidos para consumo pelo frontend
-
-Ajuste esta lista para refletir as funcionalidades reais do seu projeto.
-
 ---
 
 ## Estrutura do projeto (exemplo)
@@ -42,18 +32,12 @@ Ajuste esta lista para refletir as funcionalidades reais do seu projeto.
 - /backend — código do Spring Boot
 - /frontend — código do frontend (React, etc.)
 - README.md — documentação do repositório
-- docker-compose.yml — (opcional) orquestração de containers
-
-Altere conforme a estrutura real do repositório.
-
 ---
 
 ## Pré-requisitos
 
 - Java 11+ (ou versão usada no projeto)
-- Maven 3.6+
-- Node.js + npm/yarn (se houver frontend)
-- Docker & Docker Compose (opcional)
+- Node.js + npm
 - Banco de dados (Postgres/MySQL) — ou usar H2 embarcado
 
 ---
